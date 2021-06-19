@@ -7,11 +7,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+    # 第一步，获取源码，使用的是actions
     - name: Checkout
       uses: actions/checkout@master
 
+    # 第二步，构建和部署，需要四个环境变量，分别为 GitHub 密钥、发布分支、构建成果所在目录、构建脚本
     - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
+      uses: JamesIves/github-pages-deploy-action@4.1.4
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
