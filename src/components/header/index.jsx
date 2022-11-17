@@ -27,6 +27,7 @@ const Header = (() => {
 		// setBoxArr(newArr)
 		const arrData = getRandomStart(dirctionNum[0], dirctionNum[1], newArr)
 		setArrData(arrData)
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [dirctionNum])
 
 	// 第一步，需要给单词的每个字填充到单元格内；
