@@ -25,7 +25,8 @@ const Header = (() => {
 
 		console.log(newArr)
 		// setBoxArr(newArr)
-		setArrData(getRandomStart(dirctionNum[0], dirctionNum[1], newArr))
+		const data = getRandomStart(dirctionNum[0], dirctionNum[1], newArr)
+		setArrData(data)
 	}, [dirctionNum])
 
 	// 第一步，需要给单词的每个字填充到单元格内；
