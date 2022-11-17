@@ -1,0 +1,34 @@
+.content{
+    user-select: none;
+}
+.Header{
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+.Item{
+    padding: 10px 30px;
+}
+
+.contentBox{
+    height: 400px;
+    width: 600px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.column{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
