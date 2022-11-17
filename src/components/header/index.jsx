@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import styles from './index.module.css'
 import data from './data.json'
-import _ from 'lodash'
+// import _ from 'lodash'
 
 const Header = (() => {
-	const [boxArr, setBoxArr] = useState([])
+	// const [boxArr, setBoxArr] = useState([])
 	const [arrData, setArrData] = useState([])
 	const [dirctionNum, setDirctionNum] = useState([8, 5, 2]) // 横向、纵向数目；
 
@@ -24,7 +24,7 @@ const Header = (() => {
 		});
 
 		console.log(newArr)
-		setBoxArr(newArr)
+		// setBoxArr(newArr)
 		setArrData(getRandomStart(dirctionNum[0], dirctionNum[1], newArr))
 	}, [dirctionNum])
 
