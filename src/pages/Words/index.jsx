@@ -141,13 +141,6 @@ const Words = () => {
 
             <div className={styles.contentBox}>
                 {
-                    /* boxArr.map((item, index) => {
-                            return (
-                                    <div className={styles.itemBox} key={index} onClick={_.debounce(() => {
-                                            console.log('点击了' + item.word)
-                                    }, 300)}>{item.word}</div>
-                            )
-                    }) */
                     arrData.map((item, index) => {
                         return (
                             <div className={styles.row} key={index}>
